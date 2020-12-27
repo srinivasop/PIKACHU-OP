@@ -146,7 +146,7 @@ def start(bot: Bot, update: Update, args: List[str]):
                                                                                    [InlineKeyboardButton(text="ADD PIKACHU TO YOUR GROUP",
                                                                        url="t.me/{}?startgroup=true".format(bot.username)),
                                                                                    InlineKeyboardButton(text="Source Code",
-                                                                       url="https://github.com/sirinivasop/PIKACHU-OP")
+                                                                       url="https://github.com/srinivasop/PIKACHU-OP")
                                                                                  ]]))
 
     else:
