@@ -49,9 +49,7 @@ Hello! my name *{}*.
 And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-START_IMG = os.environ.get('START_IMG', None)
-if START_IMG is None:
-    img = "https://telegra.ph/file/871a5d71464c77ed5d145.jpg"
+START_IMG = "https://telegra.ph/file/871a5d71464c77ed5d145.jpg"
 
 IMPORTED = {}
 MIGRATEABLE = []
