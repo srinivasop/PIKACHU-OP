@@ -1,5 +1,5 @@
-
-
+#hehe
+#hehe
 import asyncio, time, os, asyncio, json
 
 from telethon.tl.types import DocumentAttributeAudio
@@ -506,25 +506,26 @@ __help__ = """
 
 __mod_name__ = "Music"
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#hehe
+#hehe
+#hehe
+#hehe
+#hehe
+#hehe
+#hehe
+#hehe
+#hehe
+#hehe
+#hehe
+#hehe
+#hehe
+#hehe
+#hehe
+#hehe
+#hehe
+#hehe
+#hehe
+#hehe
+#hehe
+#hehe
+#hehe
