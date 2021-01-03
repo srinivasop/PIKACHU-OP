@@ -27,4 +27,5 @@ pyowm
 tabulate
 parsel
 youtube-search-python
+youtube-dl
 
