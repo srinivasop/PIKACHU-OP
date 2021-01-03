@@ -26,3 +26,5 @@ wikipedia
 pyowm
 tabulate
 parsel
+youtube-search-python
+
