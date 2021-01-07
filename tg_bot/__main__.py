@@ -27,8 +27,10 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
 **Hello {}, My Name is {}!** 
-I am an **SUPERB**  group management bot.
-You can find the list of available commands with /help.
+I am an Anima themed group management bot.
+🧿 I have the normal GROUP MANAGING functions like flood control, a warning system etc but I mainly have the advanced and handy Antispam system and the SIBYL-x banning system which safegaurds and helps your group from spammers.\n
+If You want A healthy And Save Group From Spammer Then Add me Their I Will Help You.
+Hit This --> /help Too See My Commands.
 
 """
 
@@ -140,14 +142,16 @@ def start(bot: Bot, update: Update, args: List[str]):
             update.effective_message.reply_photo(
                 START_IMG,
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
-                parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="🤝HELP🤝",
+                parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="? Help",
                                                                        callback_data="help_back".format(bot.username)),
-                                                                                   InlineKeyboardButton(text="🧑‍💻My Creator🧑‍💻",
-                                                                       url="t.me/PYTHON_CODER_SRINIVAS")],
-                                                                                   [InlineKeyboardButton(text="ADD PIKACHU TO YOUR GROUP",
+                                                                                   InlineKeyboardButton(text="Getting Started guide",
+                                                                       url="https://t.me/pikachubotupdates/26")],
+                                                                                   [InlineKeyboardButton(text="Add pikachu to your group",
                                                                        url="t.me/{}?startgroup=true".format(bot.username)),
                                                                                    InlineKeyboardButton(text="Source Code",
                                                                        url="https://github.com/srinivasop/PIKACHU-OP")
+                                                                                   InlineKeyboardButton(text="Support channel",
+                                                                       url="https://t.me/pikachubotsupport")
                                                                                  ]]))
 
     else:
