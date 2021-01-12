@@ -21,7 +21,7 @@ jikanpy
 speedtest-cli
 coffeehouse
 tswift
-gTTS
+gTTS>=2.0.1
 wikipedia
 pyowm
 tabulate
