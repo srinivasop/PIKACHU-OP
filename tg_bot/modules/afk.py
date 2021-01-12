@@ -1,12 +1,21 @@
+
+from telegram import Bot
+
+
+
+
+
+
 import random
 
-from telegram import Bot, Update, MessageEntity
-from telegram.ext import Filters, run_async
-
 from tg_bot import dispatcher
-from tg_bot.modules.disable import DisableAbleCommandHandler, DisableAbleRegexHandler, DisableAbleMessageHandler
+from tg_bot.modules.disable import (DisableAbleCommandHandler,
+                                          DisableAbleMessageHandler)
 from tg_bot.modules.sql import afk_sql as sql
 from tg_bot.modules.users import get_user_id
+from telegram import MessageEntity, Update
+
+from telegram.ext import  Filters, MessageHandler, run_async
 
 AFK_GROUP = 7
 AFK_REPLY_GROUP = 8
