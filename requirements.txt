@@ -14,7 +14,7 @@ geopy
 nltk
 psutil
 aiohttp>=2.2.5
-Pillow>=4.2.0
+Pillow>=5.3.0
 CurrencyConverter
 googletrans
 jikanpy
