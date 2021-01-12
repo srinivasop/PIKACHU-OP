@@ -15,4 +15,6 @@ News channel as at [Pikachu Updates](https://t.me/pikachubotUpdates)
 # work in progress
 <a href="https://telegra.ph/file/871a5d71464c77ed5d145.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="200" data-original-width="200" height="" src="https://telegra.ph/file/871a5d71464c77ed5d145.jpg" width="500" /></a></div>
 
-#and some cmnds and others are taken from other bots too..so credits to the respective owners (θ‿θ)
+#and some cmnds and others are taken from other bots too..so credits to the respective owners (θ‿θ) 
+
+#afk,filter,note not working chcek them 
