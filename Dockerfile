@@ -64,12 +64,12 @@ RUN apt update && apt upgrade -y && \
 # Pypi package Repo upgrade
 RUN pip3 install --upgrade pip setuptools
 
-# Copy Python Requirements to /root/LEGEND
-RUN git clone -b shiken https://github.com/AnimeKaizoku/LEGEND /root/LEGEND
-WORKDIR /root/LEGEND
+# Copy Python Requirements to /root/PIKACHU
+RUN git clone -b shiken https://github.com/AnimeKaizoku/PIKACHU /root/PIKACHU
+WORKDIR /root/PIKACHU
 
-#Copy config file to /root/LEGEND/LEGEND
-COPY ./LEGEND/sample_config.py ./LEGEND/config.py* /root/LEGEND/LEGEND/
+#Copy config file to /root/PIKACHU/PIKACHU
+COPY ./PIKACHU/sample_config.py ./PIKACHU/config.py* /root/PIKACHU/PIKACHU/
 
 ENV PATH="/home/bot/bin:$PATH"
 
@@ -77,4 +77,4 @@ ENV PATH="/home/bot/bin:$PATH"
 RUN pip3 install -U -r requirements.txt
 
 # Starting Worker
-CMD ["python3","-m","LEGEND"]
+CMD ["python3","-m","PIKACHU"]

@@ -8,10 +8,10 @@ from telegram.ext import (CallbackContext, CommandHandler, Filters,
                           MessageHandler, run_async)
 
 from telegram.ext import Filters, MessageHandler, run_async
-from LEGEND.modules.helper_funcs.extraction import extract_user_and_text
-from LEGEND.modules.disable import DisableAbleCommandHandler
-from LEGEND import dispatcher
-from LEGEND.modules.thonkify_dict import thonkifydict
+from PIKACHU.modules.helper_funcs.extraction import extract_user_and_text
+from PIKACHU.modules.disable import DisableAbleCommandHandler
+from PIKACHU import dispatcher
+from PIKACHU.modules.thonkify_dict import thonkifydict
 
 @run_async
 def plet(update: Update, context: CallbackContext):

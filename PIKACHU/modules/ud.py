@@ -1,6 +1,6 @@
 import requests
-from LEGEND import dispatcher
-from LEGEND.modules.disable import DisableAbleCommandHandler
+from PIKACHU import dispatcher
+from PIKACHU.modules.disable import DisableAbleCommandHandler
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, run_async
 

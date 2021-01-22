@@ -2,8 +2,8 @@ import random
 import threading
 from typing import Union
 
-from LEGEND.modules.helper_funcs.msg_types import Types
-from LEGEND.modules.sql import BASE, SESSION
+from PIKACHU.modules.helper_funcs.msg_types import Types
+from PIKACHU.modules.sql import BASE, SESSION
 from sqlalchemy import (BigInteger, Boolean, Column, Integer, String,
                         UnicodeText)
 

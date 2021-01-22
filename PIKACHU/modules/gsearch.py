@@ -3,8 +3,8 @@ import os
 import requests
 from bs4 import BeautifulSoup
 from datetime import datetime
-from LEGEND.event import register
-from LEGEND import telethn
+from PIKACHU.event import register
+from PIKACHU import telethn
 import sys
 import shutil
 from re import findall

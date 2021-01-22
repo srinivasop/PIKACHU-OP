@@ -3,7 +3,7 @@ import threading
 
 from sqlalchemy import Column, String, Boolean
 
-from LEGEND.modules.sql import SESSION, BASE
+from PIKACHU.modules.sql import SESSION, BASE
 
 
 class Permissions(BASE):

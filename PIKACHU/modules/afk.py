@@ -1,10 +1,10 @@
 import random, html
 
-from LEGEND import dispatcher
-from LEGEND.modules.disable import (DisableAbleCommandHandler,
+from PIKACHU import dispatcher
+from PIKACHU.modules.disable import (DisableAbleCommandHandler,
                                           DisableAbleMessageHandler)
-from LEGEND.modules.sql import afk_sql as sql
-from LEGEND.modules.users import get_user_id
+from PIKACHU.modules.sql import afk_sql as sql
+from PIKACHU.modules.users import get_user_id
 from telegram import MessageEntity, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, Filters, MessageHandler, run_async

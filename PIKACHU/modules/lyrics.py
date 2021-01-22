@@ -3,8 +3,8 @@ from tswift import Song
 from telegram import Bot, Update, Message, Chat
 from telegram.ext import run_async
 
-from LEGEND import dispatcher
-from LEGEND.modules.disable import DisableAbleCommandHandler
+from PIKACHU import dispatcher
+from PIKACHU.modules.disable import DisableAbleCommandHandler
 
 
 @run_async

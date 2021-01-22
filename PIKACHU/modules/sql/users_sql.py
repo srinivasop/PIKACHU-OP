@@ -1,7 +1,7 @@
 import threading
 
-from LEGEND import dispatcher
-from LEGEND.modules.sql import BASE, SESSION
+from PIKACHU import dispatcher
+from PIKACHU.modules.sql import BASE, SESSION
 from sqlalchemy import (Column, ForeignKey, Integer, String, UnicodeText,
                         UniqueConstraint, func)
 

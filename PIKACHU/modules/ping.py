@@ -5,9 +5,9 @@ import requests
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, run_async
 
-from LEGEND import StartTime, dispatcher
-from LEGEND.modules.helper_funcs.chat_status import sudo_plus
-from LEGEND.modules.disable import DisableAbleCommandHandler
+from PIKACHU import StartTime, dispatcher
+from PIKACHU.modules.helper_funcs.chat_status import sudo_plus
+from PIKACHU.modules.disable import DisableAbleCommandHandler
 
 sites_list = {
     "Telegram": "https://api.telegram.org",

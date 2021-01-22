@@ -1,4 +1,4 @@
-from LEGEND import DEV_USERS, DRAGONS, DEMONS
+from PIKACHU import DEV_USERS, DRAGONS, DEMONS
 from telegram import Message
 from telegram.ext import BaseFilter
 

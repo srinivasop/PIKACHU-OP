@@ -14,17 +14,17 @@ from telegram.ext.dispatcher import run_async
 from telegram.error import BadRequest
 from telegram.utils.helpers import escape_markdown, mention_html
 
-from LEGEND import (DEV_USERS, OWNER_ID, DRAGONS, DEMONS, TIGERS, WOLVES,
+from PIKACHU import (DEV_USERS, OWNER_ID, DRAGONS, DEMONS, TIGERS, WOLVES,
                           INFOPIC, dispatcher, sw)
-from LEGEND.__main__ import STATS, TOKEN, USER_INFO
-import LEGEND.modules.sql.userinfo_sql as sql
-from LEGEND.modules.disable import DisableAbleCommandHandler
-from LEGEND.modules.sql.global_bans_sql import is_user_gbanned
-from LEGEND.modules.sql.afk_sql import is_afk, check_afk_status
-from LEGEND.modules.sql.users_sql import get_user_num_chats
-from LEGEND.modules.helper_funcs.chat_status import sudo_plus
-from LEGEND.modules.helper_funcs.extraction import extract_user
-from LEGEND import telethn as SaitamaTelethonClient, TIGERS, DRAGONS, DEMONS
+from PIKACHU.__main__ import STATS, TOKEN, USER_INFO
+import PIKACHU.modules.sql.userinfo_sql as sql
+from PIKACHU.modules.disable import DisableAbleCommandHandler
+from PIKACHU.modules.sql.global_bans_sql import is_user_gbanned
+from PIKACHU.modules.sql.afk_sql import is_afk, check_afk_status
+from PIKACHU.modules.sql.users_sql import get_user_num_chats
+from PIKACHU.modules.helper_funcs.chat_status import sudo_plus
+from PIKACHU.modules.helper_funcs.extraction import extract_user
+from PIKACHU import telethn as SaitamaTelethonClient, TIGERS, DRAGONS, DEMONS
 
 
 def no_by_per(totalhp, percentage):
@@ -460,7 +460,7 @@ def set_about_bio(update: Update, context: CallbackContext):
 
         if user_id == bot.id and sender_id not in DEV_USERS:
             message.reply_text(
-                "Erm... yeah, I only trust team LEGEND to set my bio.")
+                "Erm... yeah, I only trust team PIKACHU to set my bio.")
             return
 
         text = message.text

@@ -3,8 +3,8 @@ import subprocess
 import sys
 from time import sleep
 
-from LEGEND import dispatcher
-from LEGEND.modules.helper_funcs.chat_status import dev_plus
+from PIKACHU import dispatcher
+from PIKACHU.modules.helper_funcs.chat_status import dev_plus
 from telegram import TelegramError, Update
 from telegram.ext import CallbackContext, CommandHandler, run_async
 

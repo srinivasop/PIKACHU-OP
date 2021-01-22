@@ -1,7 +1,7 @@
 import threading
 from typing import Union
 
-from LEGEND.modules.sql import BASE, SESSION
+from PIKACHU.modules.sql import BASE, SESSION
 from sqlalchemy import Boolean, Column, Integer, String
 
 

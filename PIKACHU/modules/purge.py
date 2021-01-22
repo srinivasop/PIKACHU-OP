@@ -1,8 +1,8 @@
 import time
 from telethon import events
 
-from LEGEND import telethn
-from LEGEND.modules.helper_funcs.telethn.chatstatus import (
+from PIKACHU import telethn
+from PIKACHU.modules.helper_funcs.telethn.chatstatus import (
     can_delete_messages, user_is_admin)
 
 

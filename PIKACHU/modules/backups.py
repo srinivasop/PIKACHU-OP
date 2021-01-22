@@ -5,23 +5,23 @@ from telegram import ParseMode, Message
 from telegram.error import BadRequest
 from telegram.ext import CommandHandler, run_async
 
-import LEGEND.modules.sql.notes_sql as sql
-from LEGEND import dispatcher, LOGGER, OWNER_ID, JOIN_LOGGER
-from LEGEND.__main__ import DATA_IMPORT
-from LEGEND.modules.helper_funcs.chat_status import user_admin
-from LEGEND.modules.helper_funcs.alternate import typing_action
+import PIKACHU.modules.sql.notes_sql as sql
+from PIKACHU import dispatcher, LOGGER, OWNER_ID, JOIN_LOGGER
+from PIKACHU.__main__ import DATA_IMPORT
+from PIKACHU.modules.helper_funcs.chat_status import user_admin
+from PIKACHU.modules.helper_funcs.alternate import typing_action
 
-# from LEGEND.modules.rules import get_rules
-import LEGEND.modules.sql.rules_sql as rulessql
+# from PIKACHU.modules.rules import get_rules
+import PIKACHU.modules.sql.rules_sql as rulessql
 
-# from LEGEND.modules.sql import warns_sql as warnssql
-import LEGEND.modules.sql.blacklist_sql as blacklistsql
-from LEGEND.modules.sql import disable_sql as disabledsql
+# from PIKACHU.modules.sql import warns_sql as warnssql
+import PIKACHU.modules.sql.blacklist_sql as blacklistsql
+from PIKACHU.modules.sql import disable_sql as disabledsql
 
-# from LEGEND.modules.sql import cust_filters_sql as filtersql
-# import LEGEND.modules.sql.welcome_sql as welcsql
-import LEGEND.modules.sql.locks_sql as locksql
-from LEGEND.modules.connection import connected
+# from PIKACHU.modules.sql import cust_filters_sql as filtersql
+# import PIKACHU.modules.sql.welcome_sql as welcsql
+import PIKACHU.modules.sql.locks_sql as locksql
+from PIKACHU.modules.connection import connected
 
 
 @run_async

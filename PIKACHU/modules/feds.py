@@ -6,16 +6,16 @@ import time
 import uuid
 from io import BytesIO
 
-import LEGEND.modules.sql.feds_sql as sql
-from LEGEND import (EVENT_LOGS, LOGGER, OWNER_ID, DRAGONS, TIGERS, WOLVES,
+import PIKACHU.modules.sql.feds_sql as sql
+from PIKACHU import (EVENT_LOGS, LOGGER, OWNER_ID, DRAGONS, TIGERS, WOLVES,
                           dispatcher)
-from LEGEND.modules.disable import DisableAbleCommandHandler
-from LEGEND.modules.helper_funcs.alternate import send_message
-from LEGEND.modules.helper_funcs.chat_status import is_user_admin
-from LEGEND.modules.helper_funcs.extraction import (extract_unt_fedban,
+from PIKACHU.modules.disable import DisableAbleCommandHandler
+from PIKACHU.modules.helper_funcs.alternate import send_message
+from PIKACHU.modules.helper_funcs.chat_status import is_user_admin
+from PIKACHU.modules.helper_funcs.extraction import (extract_unt_fedban,
                                                           extract_user,
                                                           extract_user_fban)
-from LEGEND.modules.helper_funcs.string_handling import markdown_parser
+from PIKACHU.modules.helper_funcs.string_handling import markdown_parser
 from telegram import (InlineKeyboardButton, InlineKeyboardMarkup, MessageEntity,
                       ParseMode, Update)
 from telegram.error import BadRequest, TelegramError, Unauthorized

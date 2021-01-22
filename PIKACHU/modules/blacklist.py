@@ -6,18 +6,18 @@ from telegram.error import BadRequest
 from telegram.ext import CommandHandler, MessageHandler, Filters, run_async
 from telegram.utils.helpers import mention_html
 
-import LEGEND.modules.sql.blacklist_sql as sql
-from LEGEND import dispatcher, LOGGER
-from LEGEND.modules.disable import DisableAbleCommandHandler
-from LEGEND.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from LEGEND.modules.helper_funcs.extraction import extract_text
-from LEGEND.modules.helper_funcs.misc import split_message
-from LEGEND.modules.log_channel import loggable
-from LEGEND.modules.warns import warn
-from LEGEND.modules.helper_funcs.string_handling import extract_time
-from LEGEND.modules.connection import connected
-from LEGEND.modules.sql.approve_sql import is_approved
-from LEGEND.modules.helper_funcs.alternate import send_message, typing_action
+import PIKACHU.modules.sql.blacklist_sql as sql
+from PIKACHU import dispatcher, LOGGER
+from PIKACHU.modules.disable import DisableAbleCommandHandler
+from PIKACHU.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from PIKACHU.modules.helper_funcs.extraction import extract_text
+from PIKACHU.modules.helper_funcs.misc import split_message
+from PIKACHU.modules.log_channel import loggable
+from PIKACHU.modules.warns import warn
+from PIKACHU.modules.helper_funcs.string_handling import extract_time
+from PIKACHU.modules.connection import connected
+from PIKACHU.modules.sql.approve_sql import is_approved
+from PIKACHU.modules.helper_funcs.alternate import send_message, typing_action
 
 BLACKLIST_GROUP = 11
 

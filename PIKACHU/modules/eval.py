@@ -5,8 +5,8 @@ import textwrap
 import traceback
 from contextlib import redirect_stdout
 
-from LEGEND import LOGGER, dispatcher
-from LEGEND.modules.helper_funcs.chat_status import dev_plus
+from PIKACHU import LOGGER, dispatcher
+from PIKACHU.modules.helper_funcs.chat_status import dev_plus
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, CommandHandler, run_async
 
@@ -77,7 +77,7 @@ def do(func, bot, update):
     os.chdir(os.getcwd())
     with open(
             os.path.join(os.getcwd(),
-                         'LEGEND/modules/helper_funcs/temp.txt'),
+                         'PIKACHU/modules/helper_funcs/temp.txt'),
             'w') as temp:
         temp.write(body)
 

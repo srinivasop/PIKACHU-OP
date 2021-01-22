@@ -1,4 +1,4 @@
-from LEGEND import telethn
+from PIKACHU import telethn
 import os
 import urllib.request
 from datetime import datetime
@@ -11,8 +11,8 @@ from telethon.tl import functions
 from telethon.tl import types
 from telethon.tl.types import *
 
-from LEGEND import *
-from LEGEND.event import register
+from PIKACHU import *
+from PIKACHU.event import register
 
 
 async def is_register_admin(chat, user):

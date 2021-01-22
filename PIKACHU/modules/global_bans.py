@@ -9,17 +9,17 @@ from telegram.ext import (CallbackContext, CommandHandler, Filters,
                           MessageHandler, run_async)
 from telegram.utils.helpers import mention_html
 
-import LEGEND.modules.sql.global_bans_sql as sql
-from LEGEND.modules.sql.users_sql import get_user_com_chats
-from LEGEND import (DEV_USERS, EVENT_LOGS, OWNER_ID, STRICT_GBAN, DRAGONS,
+import PIKACHU.modules.sql.global_bans_sql as sql
+from PIKACHU.modules.sql.users_sql import get_user_com_chats
+from PIKACHU import (DEV_USERS, EVENT_LOGS, OWNER_ID, STRICT_GBAN, DRAGONS,
                           SUPPORT_CHAT, SPAMWATCH_SUPPORT_CHAT, DEMONS, TIGERS,
                           WOLVES, sw, dispatcher)
-from LEGEND.modules.helper_funcs.chat_status import (is_user_admin,
+from PIKACHU.modules.helper_funcs.chat_status import (is_user_admin,
                                                            support_plus,
                                                            user_admin)
-from LEGEND.modules.helper_funcs.extraction import (extract_user,
+from PIKACHU.modules.helper_funcs.extraction import (extract_user,
                                                           extract_user_and_text)
-from LEGEND.modules.helper_funcs.misc import send_to_list
+from PIKACHU.modules.helper_funcs.misc import send_to_list
 
 GBAN_ENFORCE_GROUP = 6
 

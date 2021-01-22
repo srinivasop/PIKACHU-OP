@@ -1,6 +1,6 @@
 from typing import Dict, List
 
-from LEGEND import NO_LOAD
+from PIKACHU import NO_LOAD
 from telegram import MAX_MESSAGE_LENGTH, Bot, InlineKeyboardButton, ParseMode
 from telegram.error import TelegramError
 

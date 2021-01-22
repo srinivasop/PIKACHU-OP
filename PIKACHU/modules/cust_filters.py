@@ -15,25 +15,25 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html, escape_markdown
 
-from LEGEND import dispatcher, LOGGER, DRAGONS
-from LEGEND.modules.disable import DisableAbleCommandHandler
-from LEGEND.modules.helper_funcs.handlers import MessageHandlerChecker
-from LEGEND.modules.helper_funcs.chat_status import user_admin
-from LEGEND.modules.helper_funcs.extraction import extract_text
-from LEGEND.modules.helper_funcs.filters import CustomFilters
-from LEGEND.modules.helper_funcs.misc import build_keyboard_parser
-from LEGEND.modules.helper_funcs.msg_types import get_filter_type
-from LEGEND.modules.helper_funcs.string_handling import (
+from PIKACHU import dispatcher, LOGGER, DRAGONS
+from PIKACHU.modules.disable import DisableAbleCommandHandler
+from PIKACHU.modules.helper_funcs.handlers import MessageHandlerChecker
+from PIKACHU.modules.helper_funcs.chat_status import user_admin
+from PIKACHU.modules.helper_funcs.extraction import extract_text
+from PIKACHU.modules.helper_funcs.filters import CustomFilters
+from PIKACHU.modules.helper_funcs.misc import build_keyboard_parser
+from PIKACHU.modules.helper_funcs.msg_types import get_filter_type
+from PIKACHU.modules.helper_funcs.string_handling import (
     split_quotes,
     button_markdown_parser,
     escape_invalid_curly_brackets,
     markdown_to_html,
 )
-from LEGEND.modules.sql import cust_filters_sql as sql
+from PIKACHU.modules.sql import cust_filters_sql as sql
 
-from LEGEND.modules.connection import connected
+from PIKACHU.modules.connection import connected
 
-from LEGEND.modules.helper_funcs.alternate import send_message, typing_action
+from PIKACHU.modules.helper_funcs.alternate import send_message, typing_action
 
 HANDLER_GROUP = 10
 

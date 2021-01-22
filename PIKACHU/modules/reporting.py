@@ -1,10 +1,10 @@
 import html
 
-from LEGEND import (LOGGER, DRAGONS, TIGERS, WOLVES, dispatcher)
-from LEGEND.modules.helper_funcs.chat_status import (user_admin,
+from PIKACHU import (LOGGER, DRAGONS, TIGERS, WOLVES, dispatcher)
+from PIKACHU.modules.helper_funcs.chat_status import (user_admin,
                                                            user_not_admin)
-from LEGEND.modules.log_channel import loggable
-from LEGEND.modules.sql import reporting_sql as sql
+from PIKACHU.modules.log_channel import loggable
+from PIKACHU.modules.sql import reporting_sql as sql
 from telegram import (Chat, InlineKeyboardButton, InlineKeyboardMarkup,
                       ParseMode, Update)
 from telegram.error import BadRequest, Unauthorized

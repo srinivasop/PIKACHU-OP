@@ -1,3 +1,3 @@
-worker: python3 -m LEGEND
-web: python3 -m LEGEND
+worker: python3 -m PIKACHU
+web: python3 -m PIKACHU
 ps:scale worker=1

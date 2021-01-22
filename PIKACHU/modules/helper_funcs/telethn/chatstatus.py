@@ -1,5 +1,5 @@
-from LEGEND.modules.helper_funcs.telethn import IMMUNE_USERS, telethn
-from LEGEND import DRAGONS
+from PIKACHU.modules.helper_funcs.telethn import IMMUNE_USERS, telethn
+from PIKACHU import DRAGONS
 from telethon.tl.types import ChannelParticipantsAdmins
 
 

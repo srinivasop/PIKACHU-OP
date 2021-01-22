@@ -1,7 +1,7 @@
 import subprocess
 
-from LEGEND import LOGGER, dispatcher
-from LEGEND.modules.helper_funcs.chat_status import dev_plus
+from PIKACHU import LOGGER, dispatcher
+from PIKACHU.modules.helper_funcs.chat_status import dev_plus
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, CommandHandler
 from telegram.ext.dispatcher import run_async

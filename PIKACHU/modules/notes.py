@@ -3,15 +3,15 @@ from io import BytesIO
 import random
 from typing import Optional
 
-import LEGEND.modules.sql.notes_sql as sql
-from LEGEND import LOGGER, JOIN_LOGGER, SUPPORT_CHAT, dispatcher, DRAGONS
-from LEGEND.modules.disable import DisableAbleCommandHandler
-from LEGEND.modules.helper_funcs.handlers import MessageHandlerChecker
-from LEGEND.modules.helper_funcs.chat_status import user_admin, connection_status
-from LEGEND.modules.helper_funcs.misc import (build_keyboard,
+import PIKACHU.modules.sql.notes_sql as sql
+from PIKACHU import LOGGER, JOIN_LOGGER, SUPPORT_CHAT, dispatcher, DRAGONS
+from PIKACHU.modules.disable import DisableAbleCommandHandler
+from PIKACHU.modules.helper_funcs.handlers import MessageHandlerChecker
+from PIKACHU.modules.helper_funcs.chat_status import user_admin, connection_status
+from PIKACHU.modules.helper_funcs.misc import (build_keyboard,
                                                     revert_buttons)
-from LEGEND.modules.helper_funcs.msg_types import get_note_type
-from LEGEND.modules.helper_funcs.string_handling import escape_invalid_curly_brackets
+from PIKACHU.modules.helper_funcs.msg_types import get_note_type
+from PIKACHU.modules.helper_funcs.string_handling import escape_invalid_curly_brackets
 from telegram import (MAX_MESSAGE_LENGTH, InlineKeyboardMarkup, Message,
                       ParseMode, Update, InlineKeyboardButton)
 from telegram.error import BadRequest

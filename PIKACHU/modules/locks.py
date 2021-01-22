@@ -9,20 +9,20 @@ from telegram.utils.helpers import mention_html
 
 from alphabet_detector import AlphabetDetector
 
-import LEGEND.modules.sql.locks_sql as sql
-from LEGEND import dispatcher, DRAGONS, LOGGER
-from LEGEND.modules.disable import DisableAbleCommandHandler
-from LEGEND.modules.helper_funcs.chat_status import (
+import PIKACHU.modules.sql.locks_sql as sql
+from PIKACHU import dispatcher, DRAGONS, LOGGER
+from PIKACHU.modules.disable import DisableAbleCommandHandler
+from PIKACHU.modules.helper_funcs.chat_status import (
     can_delete,
     is_user_admin,
     user_not_admin,
     is_bot_admin,
     user_admin,
 )
-from LEGEND.modules.log_channel import loggable
-from LEGEND.modules.connection import connected
-from LEGEND.modules.sql.approve_sql import is_approved
-from LEGEND.modules.helper_funcs.alternate import send_message, typing_action
+from PIKACHU.modules.log_channel import loggable
+from PIKACHU.modules.connection import connected
+from PIKACHU.modules.sql.approve_sql import is_approved
+from PIKACHU.modules.helper_funcs.alternate import send_message, typing_action
 
 ad = AlphabetDetector()
 

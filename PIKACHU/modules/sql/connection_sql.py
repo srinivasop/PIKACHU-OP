@@ -4,7 +4,7 @@ from typing import Union
 
 from sqlalchemy import Column, String, Boolean, UnicodeText, Integer
 
-from LEGEND.modules.sql import SESSION, BASE
+from PIKACHU.modules.sql import SESSION, BASE
 
 
 class ChatAccessConnectionSettings(BASE):

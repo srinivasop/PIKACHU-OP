@@ -2,9 +2,9 @@ import sre_constants
 
 import regex
 import telegram
-from LEGEND import LOGGER, dispatcher
-from LEGEND.modules.disable import DisableAbleMessageHandler
-from LEGEND.modules.helper_funcs.regex_helper import (infinite_loop_check)
+from PIKACHU import LOGGER, dispatcher
+from PIKACHU.modules.disable import DisableAbleMessageHandler
+from PIKACHU.modules.helper_funcs.regex_helper import (infinite_loop_check)
 from telegram import Update
 from telegram.ext import CallbackContext, Filters, run_async
 

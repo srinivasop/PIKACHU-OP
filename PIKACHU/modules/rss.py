@@ -2,9 +2,9 @@ import html
 import re
 
 from feedparser import parse
-from LEGEND import dispatcher, updater
-from LEGEND.modules.helper_funcs.chat_status import user_admin
-from LEGEND.modules.sql import rss_sql as sql
+from PIKACHU import dispatcher, updater
+from PIKACHU.modules.helper_funcs.chat_status import user_admin
+from PIKACHU.modules.sql import rss_sql as sql
 from telegram import ParseMode, Update, constants
 from telegram.ext import CallbackContext, CommandHandler
 

@@ -3,18 +3,18 @@ import json
 import os
 from typing import Optional
 
-from LEGEND import (DEV_USERS, OWNER_ID, DRAGONS, SUPPORT_CHAT, DEMONS,
+from PIKACHU import (DEV_USERS, OWNER_ID, DRAGONS, SUPPORT_CHAT, DEMONS,
                           TIGERS, WOLVES, dispatcher)
-from LEGEND.modules.helper_funcs.chat_status import (dev_plus, sudo_plus,
+from PIKACHU.modules.helper_funcs.chat_status import (dev_plus, sudo_plus,
                                                            whitelist_plus)
-from LEGEND.modules.helper_funcs.extraction import extract_user
-from LEGEND.modules.log_channel import gloggable
+from PIKACHU.modules.helper_funcs.extraction import extract_user
+from PIKACHU.modules.log_channel import gloggable
 from telegram import ParseMode, TelegramError, Update
 from telegram.ext import CallbackContext, CommandHandler, run_async
 from telegram.utils.helpers import mention_html
 
 ELEVATED_USERS_FILE = os.path.join(os.getcwd(),
-                                   'LEGEND/elevated_users.json')
+                                   'PIKACHU/elevated_users.json')
 
 
 def check_user_id(user_id: int, context: CallbackContext) -> Optional[str]:

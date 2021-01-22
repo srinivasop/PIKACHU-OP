@@ -1,7 +1,7 @@
 from typing import List, Optional
 
-from LEGEND import LOGGER
-from LEGEND.modules.users import get_user_id
+from PIKACHU import LOGGER
+from PIKACHU.modules.users import get_user_id
 from telegram import Message, MessageEntity
 from telegram.error import BadRequest
 

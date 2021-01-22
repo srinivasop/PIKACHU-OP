@@ -4,14 +4,14 @@ import re
 from sys import argv
 from typing import Optional
 
-from LEGEND import (ALLOW_EXCL, CERT_PATH, DONATION_LINK, LOGGER,
+from PIKACHU import (ALLOW_EXCL, CERT_PATH, DONATION_LINK, LOGGER,
                           OWNER_ID, PORT, SUPPORT_CHAT, TOKEN, URL, WEBHOOK, pbot,
                           SUPPORT_CHAT, dispatcher, StartTime, telethn, updater)
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
-from LEGEND.modules import ALL_MODULES
-from LEGEND.modules.helper_funcs.chat_status import is_user_admin
-from LEGEND.modules.helper_funcs.misc import paginate_modules
+from PIKACHU.modules import ALL_MODULES
+from PIKACHU.modules.helper_funcs.chat_status import is_user_admin
+from PIKACHU.modules.helper_funcs.misc import paginate_modules
 from telegram import (InlineKeyboardButton, InlineKeyboardMarkup, ParseMode,
                       Update)
 from telegram.error import (BadRequest, ChatMigrated, NetworkError,
@@ -67,7 +67,7 @@ Here is modules:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can be triggered with the following: /, !.\n")
 
-LEGEND_IMG = "https://telegra.ph/file/3088bf99d782acc902fc6.jpg"
+PIKACHU_IMG = "https://telegra.ph/file/3088bf99d782acc902fc6.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 Ruhani is hosted on one of Heroku's Servers and doesn't require any donations as of now but \
@@ -85,7 +85,7 @@ CHAT_SETTINGS = {}
 USER_SETTINGS = {}
 
 for module_name in ALL_MODULES:
-    imported_module = importlib.import_module("LEGEND.modules." +
+    imported_module = importlib.import_module("PIKACHU.modules." +
                                               module_name)
     if not hasattr(imported_module, "__mod_name__"):
         imported_module.__mod_name__ = imported_module.__name__
@@ -181,7 +181,7 @@ def start(update: Update, context: CallbackContext):
         else:
             first_name = update.effective_user.first_name
             update.effective_message.reply_photo(
-                LEGEND_IMG,
+                PIKACHU_IMG,
                 PM_START_TEXT.format(
                     escape_markdown(first_name),
                     escape_markdown(context.bot.first_name)),

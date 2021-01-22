@@ -1,8 +1,8 @@
 import math
 
 import pynewtonmath as newton
-from LEGEND import dispatcher
-from LEGEND.modules.disable import DisableAbleCommandHandler
+from PIKACHU import dispatcher
+from PIKACHU.modules.disable import DisableAbleCommandHandler
 from telegram import Update
 from telegram.ext import CallbackContext, run_async
 

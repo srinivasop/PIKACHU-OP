@@ -1,6 +1,6 @@
 import threading
 
-from LEGEND.modules.sql import BASE, SESSION
+from PIKACHU.modules.sql import BASE, SESSION
 from sqlalchemy import Column, String
 
 

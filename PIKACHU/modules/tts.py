@@ -13,12 +13,12 @@ import urllib.request
 import urllib.parse
 import requests
 
-from LEGEND import (DEV_USERS, OWNER_ID, DRAGONS, DEMONS,
+from PIKACHU import (DEV_USERS, OWNER_ID, DRAGONS, DEMONS,
                           TIGERS, WOLVES, dispatcher, updater)
-from LEGEND.__main__ import STATS, TOKEN, USER_INFO
-from LEGEND.modules.disable import DisableAbleCommandHandler
-from LEGEND.modules.helper_funcs.filters import CustomFilters
-from LEGEND.modules.helper_funcs.chat_status import sudo_plus, user_admin
+from PIKACHU.__main__ import STATS, TOKEN, USER_INFO
+from PIKACHU.modules.disable import DisableAbleCommandHandler
+from PIKACHU.modules.helper_funcs.filters import CustomFilters
+from PIKACHU.modules.helper_funcs.chat_status import sudo_plus, user_admin
 from telegram import MessageEntity, ParseMode, Update, constants
 from telegram.error import BadRequest
 from emoji import UNICODE_EMOJI

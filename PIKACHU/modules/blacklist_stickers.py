@@ -1,17 +1,17 @@
 import html
 from typing import Optional
 
-import LEGEND.modules.sql.blsticker_sql as sql
-from LEGEND import LOGGER, dispatcher
-from LEGEND.modules.connection import connected
-from LEGEND.modules.disable import DisableAbleCommandHandler
-from LEGEND.modules.helper_funcs.alternate import send_message
-from LEGEND.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from LEGEND.modules.helper_funcs.misc import split_message
-from LEGEND.modules.helper_funcs.string_handling import extract_time
+import PIKACHU.modules.sql.blsticker_sql as sql
+from PIKACHU import LOGGER, dispatcher
+from PIKACHU.modules.connection import connected
+from PIKACHU.modules.disable import DisableAbleCommandHandler
+from PIKACHU.modules.helper_funcs.alternate import send_message
+from PIKACHU.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from PIKACHU.modules.helper_funcs.misc import split_message
+from PIKACHU.modules.helper_funcs.string_handling import extract_time
 
-from LEGEND.modules.log_channel import loggable
-from LEGEND.modules.warns import warn
+from PIKACHU.modules.log_channel import loggable
+from PIKACHU.modules.warns import warn
 from telegram import Chat, Message, ParseMode, Update, User, ChatPermissions
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, Filters, MessageHandler

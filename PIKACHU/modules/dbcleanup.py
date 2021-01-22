@@ -1,9 +1,9 @@
 from time import sleep
 
-import LEGEND.modules.sql.global_bans_sql as gban_sql
-import LEGEND.modules.sql.users_sql as user_sql
-from LEGEND import DEV_USERS, OWNER_ID, dispatcher
-from LEGEND.modules.helper_funcs.chat_status import dev_plus
+import PIKACHU.modules.sql.global_bans_sql as gban_sql
+import PIKACHU.modules.sql.users_sql as user_sql
+from PIKACHU import DEV_USERS, OWNER_ID, dispatcher
+from PIKACHU.modules.helper_funcs.chat_status import dev_plus
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
 from telegram.error import BadRequest, Unauthorized
 from telegram.ext import (CallbackContext, CallbackQueryHandler, CommandHandler,

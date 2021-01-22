@@ -1,11 +1,11 @@
 import html
 
-from LEGEND import ALLOW_EXCL, CustomCommandHandler, dispatcher
-from LEGEND.modules.disable import DisableAbleCommandHandler
-from LEGEND.modules.helper_funcs.chat_status import (bot_can_delete,
+from PIKACHU import ALLOW_EXCL, CustomCommandHandler, dispatcher
+from PIKACHU.modules.disable import DisableAbleCommandHandler
+from PIKACHU.modules.helper_funcs.chat_status import (bot_can_delete,
                                                            connection_status,
                                                            dev_plus, user_admin)
-from LEGEND.modules.sql import cleaner_sql as sql
+from PIKACHU.modules.sql import cleaner_sql as sql
 from telegram import ParseMode, Update
 from telegram.ext import (CallbackContext, CommandHandler, Filters,
                           MessageHandler, run_async)

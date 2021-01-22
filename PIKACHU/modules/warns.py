@@ -3,25 +3,25 @@ import re
 from typing import Optional
 
 import telegram
-from LEGEND import TIGERS, WOLVES, dispatcher
-from LEGEND.modules.disable import DisableAbleCommandHandler
-from LEGEND.modules.helper_funcs.chat_status import (
+from PIKACHU import TIGERS, WOLVES, dispatcher
+from PIKACHU.modules.disable import DisableAbleCommandHandler
+from PIKACHU.modules.helper_funcs.chat_status import (
     bot_admin,
     can_restrict,
     is_user_admin,
     user_admin,
     user_admin_no_reply,
 )
-from LEGEND.modules.helper_funcs.extraction import (
+from PIKACHU.modules.helper_funcs.extraction import (
     extract_text,
     extract_user,
     extract_user_and_text,
 )
-from LEGEND.modules.helper_funcs.filters import CustomFilters
-from LEGEND.modules.helper_funcs.misc import split_message
-from LEGEND.modules.helper_funcs.string_handling import split_quotes
-from LEGEND.modules.log_channel import loggable
-from LEGEND.modules.sql import warns_sql as sql
+from PIKACHU.modules.helper_funcs.filters import CustomFilters
+from PIKACHU.modules.helper_funcs.misc import split_message
+from PIKACHU.modules.helper_funcs.string_handling import split_quotes
+from PIKACHU.modules.log_channel import loggable
+from PIKACHU.modules.sql import warns_sql as sql
 from telegram import (
     CallbackQuery,
     Chat,
@@ -43,7 +43,7 @@ from telegram.ext import (
     run_async,
 )
 from telegram.utils.helpers import mention_html
-from LEGEND.modules.sql.approve_sql import is_approved
+from PIKACHU.modules.sql.approve_sql import is_approved
 
 WARN_HANDLER_GROUP = 9
 CURRENT_WARNING_FILTER_STRING = "<b>Current warning filters in this chat:</b>\n"
