@@ -213,7 +213,7 @@ def start(update: Update, context: CallbackContext):
                     ]]))
     else:
         update.effective_message.reply_text(
-            "Pika pika ⚡⚡ /n Pikachu is online)
+            "Pika pika ⚡⚡ Pikachu is online)
 
 # for test purposes
 def error_callback(update: Update, context: CallbackContext):
