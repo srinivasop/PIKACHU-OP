@@ -8,8 +8,8 @@
          "manager",
          "Senku"
       ],   
-   "repository": "https://github.com/legendx22/PIKACHU-ROBOT",
-   "logo": "https://telegra.ph/file/84b2017bc2f3c90f2e61c.jpg",
+   "repository": "https://github.com/srinivasop/PIKACHU-OP",
+   "logo": "https://telegra.ph/file/3088bf99d782acc902fc6.jpg",
    "addons": [
     {
          "options": {
@@ -52,16 +52,16 @@
       "OWNER_ID": {
          "description": "Your user ID as an integer.",
          "required": true,
-         "value": "1100231654"
+         "value": "1413280026"
       },
       "OWNER_USERNAME": {
          "description": "Your username without the @",
-         "value": "legendx22"
+         "value": "PYTHON_CODER_SRINIVAS"
       },
       "SUPPORT_CHAT": {
-         "description": "Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to saitama support than consider you made an enemy.",
+         "description": "Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to saitama PIKACHU than consider you made an enemy.",
          "required": true,
-         "value": "teamishere"
+         "value": "pikachubotsupport"
       },
       "EVENT_LOGS": {
          "description": "Event logs channel to note down important bot level events, recommend to make this public. ex: '-123456'",
