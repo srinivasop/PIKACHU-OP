@@ -67,7 +67,7 @@ Here is modules:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can be triggered with the following: /, !.\n")
 
-LEGEND_IMG = "https://telegra.ph/file/84b2017bc2f3c90f2e61c.jpg"
+LEGEND_IMG = "https://telegra.ph/file/3088bf99d782acc902fc6.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 Ruhani is hosted on one of Heroku's Servers and doesn't require any donations as of now but \
@@ -196,19 +196,19 @@ def start(update: Update, context: CallbackContext):
                      ],
                      [
                         InlineKeyboardButton(
-                            text=" ⚡ Join team x ",
-                            url="https://t.me/teamishere"),
+                            text=" ⚡ Join chat",
+                            url="https://t.me/pro_masti"),
                          InlineKeyboardButton(
                             text=" ❤️ Channel ",
-                             url="https://t.me/hackerget0")        
+                             url="https://t.me/cyber_boyzz")        
                       ],
                       [ 
                         InlineKeyboardButton(
                              text=" ✨ Support ",
-                             url="https://t.me/Legend_userbot_support"),
+                             url="https://t.me/pikachubotsupport"),
                         InlineKeyboardButton(
                              text=" 👨‍💻 Creator ",
-                             url="https://t.me/legendx22")
+                             url="https://t.me/PYTHON_CODER_SRINIVAS")
                     
                     ]]))
     else:
