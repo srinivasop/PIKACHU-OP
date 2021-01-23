@@ -70,7 +70,7 @@ Here is modules:
 LEGEND_IMG = "https://telegra.ph/file/3088bf99d782acc902fc6.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
-Ruhani is hosted on one of Heroku's Servers and doesn't require any donations as of now but \
+Legend is hosted on one of Heroku's Servers and doesn't require any donations as of now but \
 You can donate to the original writer of the Base code, Paul
 There are two ways of supporting him; [PayPal](paypal.me/PaulSonOfLars), or [Monzo](monzo.me/paulnionvestergaardlarsen)."""
 
@@ -530,7 +530,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "Ruhani is now online!")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "Pikachu is now online!")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!")
