@@ -253,7 +253,7 @@ def info(update: Update, context: CallbackContext):
                     text += _stext.format("Detected")
                 elif status in {"administrator", "creator"}:
                     text += _stext.format("Admin")
-    if user_id not in [bot.id, 777000, 1087968824]:
+    if user_id not in [bot.id, 777000, 1100231654]:
         userhp = hpmanager(user)
         text += f"\n\n<b>Health:</b> <code>{userhp['earnedhp']}/{userhp['totalhp']}</code>\n[<i>{make_bar(int(userhp['percentage']))} </i>{userhp['percentage']}%]"
 
@@ -262,7 +262,7 @@ def info(update: Update, context: CallbackContext):
         if spamwtc:
             text += "\n\n<b>This person is Spamwatched!</b>"
             text += f"\nReason: <pre>{spamwtc.reason}</pre>"
-            text += "\nAppeal at @SpamWatchSupport"
+            text += "\nAppeal at @teamishere"
         else:
             pass
     except:
@@ -271,26 +271,26 @@ def info(update: Update, context: CallbackContext):
     disaster_level_present = False
 
     if user.id == OWNER_ID:
-        text += "\n\nThe Disaster level of this person is 'God'."
+        text += "\n\nThe HUNTER SKILL of this person is 'INFINITE'."
         disaster_level_present = True
     elif user.id in DEV_USERS:
-        text += "\n\nThis user is member of 'Hero Association'."
+        text += "\n\nThis user is CO-OWNER of '🍁THIS BOT🍁'."
         disaster_level_present = True
     elif user.id in DRAGONS:
-        text += "\n\nThe Disaster level of this person is 'Dragon'."
+        text += "\n\nThe HUNTER SKILL of this person is 'S-RANK'."
         disaster_level_present = True
     elif user.id in DEMONS:
-        text += "\n\nThe Disaster level of this person is 'Demon'."
+        text += "\n\nThe HUNTER SKILL of this person is 'A-RANK'."
         disaster_level_present = True
     elif user.id in TIGERS:
-        text += "\n\nThe Disaster level of this person is 'Tiger'."
+        text += "\n\nThe HUNTER SKILL of this person is 'B-RANK'."
         disaster_level_present = True
     elif user.id in WOLVES:
-        text += "\n\nThe Disaster level of this person is 'Wolf'."
+        text += "\n\nThe HUNTER SKILL of this person is 'C-RANK'."
         disaster_level_present = True
 
     if disaster_level_present:
-        text += ' [<a href="https://t.me/teamishere">?</a>]'.format(
+        text += ' [<a href="https://t.me/teamishere/2">?</a>]'.format(
             bot.username)
 
     try:
@@ -317,16 +317,14 @@ def info(update: Update, context: CallbackContext):
     if INFOPIC:
         try:
             profile = context.bot.get_user_profile_photos(user.id).photos[0][-1]
-            _file = bot.get_file(profile["file_id"])
-            _file.download(f"{user.id}.png")
-
-            message.reply_document(
-                document=open(f"{user.id}.png", "rb"),
-                caption=(text),
-                parse_mode=ParseMode.HTML,
-                disable_web_page_preview=True)
-
-            os.remove(f"{user.id}.png")
+            context.bot.sendChatAction(chat.id, "upload_photo")
+            context.bot.send_photo(
+            chat.id,
+            photo=profile,
+            caption=(text),
+            parse_mode=ParseMode.HTML,
+            disable_web_page_preview=True,
+        )
         # Incase user don't have profile pic, send normal text
         except IndexError:
             message.reply_text(
@@ -370,14 +368,14 @@ def about_me(update: Update, context: CallbackContext):
 def set_about_me(update: Update, context: CallbackContext):
     message = update.effective_message
     user_id = message.from_user.id
-    if user_id in [1100231654]:
+    if user_id in [777000, 1100231654]:
         message.reply_text("Error! Unauthorized")
         return
     bot = context.bot
     if message.reply_to_message:
         repl_message = message.reply_to_message
         repl_user_id = repl_message.from_user.id
-        if repl_user_id in [bot.id, 1100231654] and (user_id
+        if repl_user_id in [bot.id, 777000, 1100231654] and (user_id
                                                              in DEV_USERS):
             user_id = repl_user_id
     text = message.text
@@ -385,7 +383,7 @@ def set_about_me(update: Update, context: CallbackContext):
     if len(info) == 2:
         if len(info[1]) < MAX_MESSAGE_LENGTH // 4:
             sql.set_user_me_info(user_id, info[1])
-            if user_id in [1100231654]:
+            if user_id in [777000, 1100231654]:
                 message.reply_text("Authorized...Information updated!")
             elif user_id == bot.id:
                 message.reply_text(
@@ -454,13 +452,13 @@ def set_about_bio(update: Update, context: CallbackContext):
             )
             return
 
-        if user_id in [1100231654] and sender_id not in DEV_USERS:
+        if user_id in [777000, 1100231654] and sender_id not in DEV_USERS:
             message.reply_text("You are not authorised")
             return
 
         if user_id == bot.id and sender_id not in DEV_USERS:
             message.reply_text(
-                "Erm... yeah, I only trust team PIKACHU to set my bio.")
+                "Erm... yeah, I only trust you  to set my bio.")
             return
 
         text = message.text
@@ -516,7 +514,7 @@ Examples:
  • `/info`*:* get information about a user. 
  
 *What is that health thingy?*
- Come and see [HP System explained](https://t.me/teamishere)
+ Come and see [HP System explained](https://t.me/OnePunchUpdates/192)
 """
 
 SET_BIO_HANDLER = DisableAbleCommandHandler("setbio", set_about_bio)
