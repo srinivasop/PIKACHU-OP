@@ -4,14 +4,14 @@ import re
 from sys import argv
 from typing import Optional
 
-from LEGEND import (ALLOW_EXCL, CERT_PATH, DONATION_LINK, LOGGER,
+from PIKACHU import (ALLOW_EXCL, CERT_PATH, DONATION_LINK, LOGGER,
                           OWNER_ID, PORT, SUPPORT_CHAT, TOKEN, URL, WEBHOOK, pbot,
                           SUPPORT_CHAT, dispatcher, StartTime, telethn, updater)
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
-from LEGEND.modules import ALL_MODULES
-from LEGEND.modules.helper_funcs.chat_status import is_user_admin
-from LEGEND.modules.helper_funcs.misc import paginate_modules
+from PIKACHU.modules import ALL_MODULES
+from PIKACHU.modules.helper_funcs.chat_status import is_user_admin
+from PIKACHU.modules.helper_funcs.misc import paginate_modules
 from telegram import (InlineKeyboardButton, InlineKeyboardMarkup, ParseMode,
                       Update)
 from telegram.error import (BadRequest, ChatMigrated, NetworkError,
@@ -67,7 +67,7 @@ Here is modules:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can be triggered with the following: /, !.\n")
 
-LEGEND_IMG = "https://telegra.ph/file/84b2017bc2f3c90f2e61c.jpg"
+LEGEND_IMG = "https://telegra.ph/file/3088bf99d782acc902fc6.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 Ruhani is hosted on one of Heroku's Servers and doesn't require any donations as of now but \
@@ -196,24 +196,24 @@ def start(update: Update, context: CallbackContext):
                      ],
                      [
                         InlineKeyboardButton(
-                            text=" ⚡ Join team x ",
-                            url="https://t.me/teamishere"),
+                            text=" ⚡ Join for chat ",
+                            url="https://t.me/pro_masti"),
                          InlineKeyboardButton(
                             text=" ❤️ Channel ",
-                             url="https://t.me/hackerget0")        
+                             url="https://t.me/pikachubotupdates")        
                       ],
                       [ 
                         InlineKeyboardButton(
                              text=" ✨ Support ",
-                             url="https://t.me/Legend_userbot_support"),
+                             url="https://t.me/pikachubotsupport"),
                         InlineKeyboardButton(
                              text=" 👨‍💻 Creator ",
-                             url="https://t.me/legendx22")
+                             url="https://t.me/PYTHON_CODER_SRINIVAS")
                     
                     ]]))
     else:
         update.effective_message.reply_text(
-            "👩‍💻Hey! I'm alive.\n⚙️All systems online and functioning normally!!\n<b>⏱ Alive time:</b> <code>{}</code>\n✨ Thanks for adding me! ✨"
+            "🔥Hey! I'm alive.\n⚙️All systems online and functioning normally!!\n<b>⏱ Alive time:</b> <code>{}</code>\n✨ Thanks for adding me! ✨"
             .format(uptime),
             parse_mode=ParseMode.HTML)
 
