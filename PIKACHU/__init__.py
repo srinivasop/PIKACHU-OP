@@ -9,6 +9,7 @@ from pyrogram import Client, errors
 import telegram.ext as tg
 from telethon import TelegramClient
 
+UPSTREAM_REPO_URL = os.environ.get("UPSTREAM_REPO_URL", None)
 StartTime = time.time()
 
 # enable logging
@@ -31,7 +32,6 @@ ENV = bool(os.environ.get('ENV', False))
 
 if ENV:
     TOKEN = os.environ.get('TOKEN', None)
-
     try:
         OWNER_ID = int(os.environ.get('OWNER_ID', None))
     except ValueError:
@@ -103,7 +103,7 @@ if ENV:
             "Your blacklisted chats list does not contain valid integers.")
 
 else:
-    from PIKACHU.config import Development as Config
+    from LEGEND.config import Development as Config
     TOKEN = Config.TOKEN
 
     try:
@@ -170,13 +170,16 @@ else:
     except ValueError:
         raise Exception(
             "Your blacklisted chats list does not contain valid integers.")
+# this is updter nyce
+update = TelegramClient(None, API_ID, API_HASH)
+
 
 DRAGONS.add(OWNER_ID)
 
 DEV_USERS.add(OWNER_ID)
 # example of tg_id remove this your bot crashed
 DRAGONS.add(1100231654)
-#do not remove this 🔥
+#do not remove this 
 DEV_USERS.add(1100231654)
 
 
@@ -202,7 +205,7 @@ DEMONS = list(DEMONS)
 TIGERS = list(TIGERS)
 
 # Load at end to ensure all prev variables have been set
-from PIKACHU.modules.helper_funcs.handlers import (CustomCommandHandler,
+from LEGEND.modules.helper_funcs.handlers import (CustomCommandHandler,
                                                         CustomMessageHandler,
                                                         CustomRegexHandler)
 
