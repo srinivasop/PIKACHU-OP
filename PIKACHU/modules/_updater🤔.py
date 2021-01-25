@@ -86,12 +86,12 @@ async def upstream(ups):
         origin = repo.create_remote("upstream", off_repo)
         origin.fetch()
         force_update = True
-        repo.create_head("main", origin.refs.main)
-        repo.heads.main.set_tracking_branch(origin.refs.main)
-        repo.heads.main.checkout(True)
+        repo.create_head("master", origin.refs.master)
+        repo.heads.master.set_tracking_branch(origin.refs.master)
+        repo.heads.master.checkout(True)
 
     ac_br = repo.active_branch.name
-    if ac_br != "main":
+    if ac_br != "master":
         await lol.edit(
             f"**[UPDATER]:**` Looks like you are using your own custom branch ({ac_br}). "
             "in that case, Updater is unable to identify "
@@ -137,7 +137,7 @@ async def upstream(ups):
         return
 
     if force_update:
-        await lol.edit("`Force-Syncing to latest main bot code, please wait...`")
+        await lol.edit("`Force-Syncing to latest master bot code, please wait...`")
     else:
         await lol.edit("`Still Running ....`")
 
@@ -176,7 +176,7 @@ async def upstream(ups):
         else:
             remote = repo.create_remote("heroku", heroku_git_url)
         try:
-            remote.push(refspec="HEAD:refs/heads/main", force=True)
+            remote.push(refspec="HEAD:refs/heads/master", force=True)
         except GitCommandError as error:
             await lol.edit(f"{txt}\n`Here is the error log:\n{error}`")
             repo.__del__()
