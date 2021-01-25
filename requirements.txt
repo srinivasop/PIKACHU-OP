@@ -12,6 +12,7 @@ pynewtonmath
 spongemock
 zalgo-text
 geopy
+heroku3==4.2.3
 nltk
 psutil
 aiohttp>=2.2.5
