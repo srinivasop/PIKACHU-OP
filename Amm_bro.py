@@ -18,7 +18,7 @@
 
 #if you know any of them then you may join us see down now...
 
-#need to join our team if you know any of them ?? Them dm/pm/ib 
+#need to join our team if you know any of them ?? Then dm/pm/ib 
 
 #@PYTHON_CODER_SRINIVAS or @LEGENDX22 🤤🤤🤤 
 
