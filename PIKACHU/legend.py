@@ -8,4 +8,5 @@ wolves = os.environ.get("WOLVES")
 dev = os.environ.get("DEV_USERS")
 owner = os.environ.get("OWNER_USERNAME")
 
-creator = "LEGEND X"
+creator = "LEGEND X AND SRINIVAS OP"
+team = "TEAM LEGEND IS MY TEAM⚡"
