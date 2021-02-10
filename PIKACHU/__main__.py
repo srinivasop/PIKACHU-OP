@@ -196,7 +196,7 @@ def start(update: Update, context: CallbackContext):
                      ],
                      [
                         InlineKeyboardButton(
-                            text=" ⚡ Join for chat ",
+                            text=" ⚡ ѕσυя¢є ¢σ∂є ",
                             url="https://t.me/pro_masti"),
                          InlineKeyboardButton(
                             text=" ❤️ Channel ",
