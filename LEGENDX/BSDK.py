@@ -1,1 +1,0 @@
-#bsdk legend is legend
