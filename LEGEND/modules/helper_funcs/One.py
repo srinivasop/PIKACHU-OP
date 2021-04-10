@@ -1,1 +1,0 @@
-# gand maro frnds
